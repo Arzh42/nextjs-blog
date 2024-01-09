@@ -6,9 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@stoati/nextjs-tools": "^0.0.13",
+    "@stoati/react-tools": "^0.0.6",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=18"
