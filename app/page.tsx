@@ -1,33 +1,30 @@
-import styles from "@/styles/Home.module.css";
-import { TextField } from "@stoati/nextjs-tools";
-const getData = async () => {
-  const data = await fetch(
-    "https://api.stoati.fr/shops/ac85caf1-b3b3-4c21-a919-6e1beb596066/components/data",
-    {
-      method: "GET",
-      mode: "cors",
-      headers: {
-        authorization: `Bearer test`,
-      },
-    }
-  );
-
-  if (!data.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch data");
-  }
-
-  return await data.json();
-};
+import { StyledText, TextField } from "@stoati/nextjs-tools";
+import Link from "next/link";
 
 export default async function Home() {
-  const data = await getData();
-  console.log(data);
   return (
-    <div className={styles.container}>
-      <h1 className={styles.h1}>
-        <TextField moduleName="title" />
-      </h1>
+    <div className="flex flex-col justify-between items-center h-screen py-8">
+      <header className="flex flex-col items-center gap-2 ">
+        <h1 className="font-bold text-5xl text-white">
+          <TextField moduleName="title" />
+        </h1>
+        <h2 className="font-bold text-xl text-white">Artiste - Peintre</h2>
+      </header>
+
+      <div className="text-white flex flex-col gap-4">
+        <img
+          style={{
+            maxHeight: 600,
+            maxWidth: 600,
+          }}
+          src={`images/img1.jpg`}
+          alt="Image 1"
+        />
+        <StyledText moduleName="image_desc" />
+      </div>
+      <footer className="text-white font-bold">
+        <Link href="https://www.instagram.com/baptiste__borel/">Instagram</Link>
+      </footer>
     </div>
   );
 }
