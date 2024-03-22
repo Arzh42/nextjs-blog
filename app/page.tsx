@@ -1,13 +1,30 @@
-import styles from "@/styles/Home.module.css";
+import { StyledText, TextField } from "@stoati/nextjs-tools";
+import Link from "next/link";
 
-import { TextField } from "@stoati/nextjs-tools";
-
-export default function Home() {
+export default async function Home() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.h1}>
-        <TextField componentId="1117ef55-f12d-407f-86a7-01f51a648284" />
-      </h1>
+    <div className="flex flex-col justify-between items-center h-screen py-8">
+      <header className="flex flex-col items-center gap-2 ">
+        <h1 className="font-bold text-5xl text-white">
+          <TextField moduleName="title" />
+        </h1>
+        <h2 className="font-bold text-xl text-white">Artiste - Peintre</h2>
+      </header>
+
+      <div className="text-white flex flex-col gap-4">
+        <img
+          style={{
+            maxHeight: 600,
+            maxWidth: 600,
+          }}
+          src={`images/img1.jpg`}
+          alt="Image 1"
+        />
+        <StyledText moduleName="image_desc" />
+      </div>
+      <footer className="text-white font-bold">
+        <Link href="https://www.instagram.com/baptiste__borel/">Instagram</Link>
+      </footer>
     </div>
   );
 }
