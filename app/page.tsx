@@ -6,7 +6,7 @@ export default async function Home() {
     <div className="flex flex-col justify-between items-center h-screen py-8">
       <header className="flex flex-col items-center gap-2 ">
         <h1 className="font-bold text-5xl text-white">
-          <TextField moduleName="title" />
+          <TextField componentId="title" />
         </h1>
         <h2 className="font-bold text-xl text-white">Artiste - Peintre</h2>
       </header>
@@ -20,7 +20,7 @@ export default async function Home() {
           src={`images/img1.jpg`}
           alt="Image 1"
         />
-        <StyledText moduleName="image_desc" />
+        <StyledText componentId="image_desc" />
       </div>
       <footer className="text-white font-bold">
         <Link href="https://www.instagram.com/baptiste__borel/">Instagram</Link>

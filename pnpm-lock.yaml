@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@stoati/nextjs-tools':
-    specifier: ^0.0.29
-    version: 0.0.29(postcss@8.4.38)
+    specifier: ^0.0.31
+    version: 0.0.31(postcss@8.4.38)
   '@stoati/react-tools':
-    specifier: ^0.0.21
-    version: 0.0.21(postcss@8.4.38)
+    specifier: ^0.0.22
+    version: 0.0.22(postcss@8.4.38)
   next:
     specifier: ^14.2.1
     version: 14.2.1(react-dom@18.2.0)(react@18.2.0)
@@ -525,10 +525,10 @@ packages:
     dev: false
     optional: true
 
-  /@stoati/nextjs-tools@0.0.29(postcss@8.4.38):
-    resolution: {integrity: sha512-74Rg5gm1B1JyE0x7ogBnAfzC7S4Iqm5R40hSAeOLE4owOWsdvDwjb6kFwcdq6PG/akNak74iI7J5OF790ikKYg==}
+  /@stoati/nextjs-tools@0.0.31(postcss@8.4.38):
+    resolution: {integrity: sha512-Te+iuLuosU9sVLedRiQNQiDSb5vt67znA+QeCNf3MBRtGZKmj+JliSN26Ws2cIuCRPhBkhaol8QpAYYp/Y/nKg==}
     dependencies:
-      '@stoati/react-tools': 0.0.21(postcss@8.4.38)
+      '@stoati/react-tools': 0.0.22(postcss@8.4.38)
       react: 18.2.0
       tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
       typescript: 5.4.5
@@ -540,10 +540,10 @@ packages:
       - ts-node
     dev: false
 
-  /@stoati/react-tools@0.0.21(postcss@8.4.38):
-    resolution: {integrity: sha512-OOrEyqp9sE96srwUo5z5lsck4pjcol8BXiPqZIJ1iIlkDQtS6bBLSNmzwptoAKO/CdGu09UYhc9a/NE0ETf3vA==}
+  /@stoati/react-tools@0.0.22(postcss@8.4.38):
+    resolution: {integrity: sha512-H0AIC0u03CmJAL6KI8fe3JFD4kdiFisP78xiS7QwMULSc+EooZsnxncG8/Yb6zLfDkE9MM/yzrXupmXqes2k4g==}
     dependencies:
-      '@stoati/shared-types': 0.0.14(postcss@8.4.38)
+      '@stoati/shared-types': 0.0.15(postcss@8.4.38)
       '@tanstack/react-query': 5.29.2(react@18.2.0)
       '@types/react': 18.2.78
       react: 18.2.0
@@ -559,8 +559,8 @@ packages:
       - ts-node
     dev: false
 
-  /@stoati/shared-types@0.0.14(postcss@8.4.38):
-    resolution: {integrity: sha512-Rh56KFuNGQc09R/WHo4LIPzZHKYsU2/VQLtThqWTmpbzOFQIYeUybCrFLv+UmQJeDGw2pS5kSGIntzNi0I0X8g==}
+  /@stoati/shared-types@0.0.15(postcss@8.4.38):
+    resolution: {integrity: sha512-2hcu5lsktfdl49qPYHlwAotHnzJgOO5NEGq+7DpEBzvir+uvjOyyVUARBw5ohmVzGKG0FCo4ghkBZ3GNSmvUtQ==}
     dependencies:
       tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
       typescript: 5.4.5

@@ -6,8 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@stoati/nextjs-tools": "^0.0.29",
-    "@stoati/react-tools": "^0.0.21",
+    "@stoati/nextjs-tools": "^0.0.31",
+    "@stoati/react-tools": "^0.0.22",
     "next": "^14.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
