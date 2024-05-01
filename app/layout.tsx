@@ -12,11 +12,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className="min-h-screen"
-        style={{ backgroundImage: `url("images/img1.jpg")` }}
-      >
-        <div className="w-full h-full backdrop-brightness-50 backdrop-blur-xl">
+      <body className="min-h-screen">
+        <div
+          className="w-full h-full backdrop-brightness-50 backdrop-blur-xl"
+          style={{
+            background: "linear-gradient(90deg,#e52e71,#ff8a00)",
+          }}
+        >
           {children}
         </div>
       </body>
