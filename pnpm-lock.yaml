@@ -9,11 +9,11 @@ dependencies:
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.78)(react@18.2.0)
   '@stoati/nextjs-tools':
-    specifier: ^0.0.52
-    version: 0.0.52(@types/react@18.2.78)(postcss@8.4.38)
+    specifier: ^0.0.53
+    version: 0.0.53(@types/react@18.2.78)(postcss@8.4.38)
   '@stoati/react-tools':
-    specifier: ^0.0.41
-    version: 0.0.41(postcss@8.4.38)
+    specifier: ^0.0.42
+    version: 0.0.42(postcss@8.4.38)
   '@stoati/shared-types':
     specifier: ^0.0.16
     version: 0.0.16(postcss@8.4.38)
@@ -587,10 +587,10 @@ packages:
     dev: false
     optional: true
 
-  /@stoati/nextjs-tools@0.0.52(@types/react@18.2.78)(postcss@8.4.38):
-    resolution: {integrity: sha512-6uY2tlkTszvWRnDbIeybzt2jAEwhqTEbVO7jz+ohLxJd7UwwARYjEREAIilD5Xs585z+Xbeae+iUHiL409bJHw==}
+  /@stoati/nextjs-tools@0.0.53(@types/react@18.2.78)(postcss@8.4.38):
+    resolution: {integrity: sha512-UDvxWxZFn37OiwcvQXxgX4Bh85Gn6sqIcIIXPEXAGaPMF0D//1YVrs9CjcGC5Tl5OgMdJae+FzQLhYWXeHQfsA==}
     dependencies:
-      '@stoati/react-tools': 0.0.41(postcss@8.4.38)
+      '@stoati/react-tools': 0.0.42(postcss@8.4.38)
       react: 18.2.0
       react-markdown: 9.0.1(@types/react@18.2.78)(react@18.2.0)
       tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
@@ -604,10 +604,10 @@ packages:
       - ts-node
     dev: false
 
-  /@stoati/react-tools@0.0.41(postcss@8.4.38):
-    resolution: {integrity: sha512-fJMPxW1FuoYNZs5IyY3hOi9GPvreKUia+JT7CSRrMw2rrQy170kf/HzWK5EgCSV3Ih3phT8oG0ZaQ7cD9mVFog==}
+  /@stoati/react-tools@0.0.42(postcss@8.4.38):
+    resolution: {integrity: sha512-otb6vjsYSfdH28EVw/dhC2m3jG8ef0PxKhyf3A+hZ5pDiSUqWzEZoI0JkoE0FBwVWEx/lZv2A17tPKfE5YU45A==}
     dependencies:
-      '@stoati/shared-types': 0.0.16(postcss@8.4.38)
+      '@stoati/shared-types': 0.0.17(postcss@8.4.38)
       '@tanstack/query-core': 5.32.0
       '@tanstack/react-query': 5.32.0(react@18.2.0)
       '@types/react': 18.2.78
@@ -629,6 +629,20 @@ packages:
 
   /@stoati/shared-types@0.0.16(postcss@8.4.38):
     resolution: {integrity: sha512-OhmVqv8+jcNksMKS9nn018XNaeemNNUG8V/G+nNXuLniypfe9mzCmff6pTbygMMWO+MiZVWuANiSwmhhrpkWrA==}
+    dependencies:
+      tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
+      typescript: 5.4.5
+      zod: 3.22.4
+    transitivePeerDependencies:
+      - '@microsoft/api-extractor'
+      - '@swc/core'
+      - postcss
+      - supports-color
+      - ts-node
+    dev: false
+
+  /@stoati/shared-types@0.0.17(postcss@8.4.38):
+    resolution: {integrity: sha512-Ttx8Vo5u4dxt7+gWJFbtTDL6e8//wAALjCiJR7hLSEeG0MajaTumsBazj3zR4w7xgZkSPfacINuBlXTWXvgoPg==}
     dependencies:
       tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
       typescript: 5.4.5
