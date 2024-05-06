@@ -1,7 +1,7 @@
 import Gallery from "@/app/Gallery";
+import Links from "@/app/Links";
 import { StyledText, Template, TextField } from "@stoati/nextjs-tools";
 import { ChevronDown } from "lucide-react";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,12 +31,7 @@ export default function Home() {
             return <Gallery {...props} key={props.parentId} />;
           }}
         </Template>
-
-        <footer className="text-white font-bold">
-          <Link href="https://www.instagram.com/baptiste__borel/">
-            Instagram
-          </Link>
-        </footer>
+        <Links />
       </div>
     </>
   );
