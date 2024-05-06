@@ -1,5 +1,6 @@
 import Gallery from "@/app/Gallery";
 import { StyledText, Template, TextField } from "@stoati/nextjs-tools";
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -17,6 +18,11 @@ export default function Home() {
           </header>
           <div className="flex flex-col justify-center items-center flex-1 text-white font-bold text-xl text-center px-2">
             <StyledText templateElementId="0ed78345-e2eb-4172-a831-3e6a00dcec6b" />
+          </div>
+          <div className="text-white flex gap-2">
+            <ChevronDown />
+            Descendez pour découvrir l'artiste
+            <ChevronDown />
           </div>
         </div>
 

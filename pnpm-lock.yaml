@@ -9,11 +9,11 @@ dependencies:
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.78)(react@18.2.0)
   '@stoati/nextjs-tools':
-    specifier: ^0.0.53
-    version: 0.0.53(@types/react@18.2.78)(postcss@8.4.38)
+    specifier: ^0.0.58
+    version: 0.0.58(@types/react@18.2.78)(postcss@8.4.38)
   '@stoati/react-tools':
-    specifier: ^0.0.42
-    version: 0.0.42(postcss@8.4.38)
+    specifier: ^0.0.47
+    version: 0.0.47(postcss@8.4.38)
   '@stoati/shared-types':
     specifier: ^0.0.16
     version: 0.0.16(postcss@8.4.38)
@@ -26,6 +26,9 @@ dependencies:
   clsx:
     specifier: ^2.1.1
     version: 2.1.1
+  embla-carousel:
+    specifier: ^8.0.4
+    version: 8.0.4
   embla-carousel-react:
     specifier: ^8.0.2
     version: 8.0.2(react@18.2.0)
@@ -587,10 +590,10 @@ packages:
     dev: false
     optional: true
 
-  /@stoati/nextjs-tools@0.0.53(@types/react@18.2.78)(postcss@8.4.38):
-    resolution: {integrity: sha512-UDvxWxZFn37OiwcvQXxgX4Bh85Gn6sqIcIIXPEXAGaPMF0D//1YVrs9CjcGC5Tl5OgMdJae+FzQLhYWXeHQfsA==}
+  /@stoati/nextjs-tools@0.0.58(@types/react@18.2.78)(postcss@8.4.38):
+    resolution: {integrity: sha512-LqEb8mPdvRce+S8f3oIS4Pm3GmkXUsn8heFZ2CqdrUxs8/l96asqeiPyZLu7TvpY2NR1ldsKOaELbCaDo1mQKQ==}
     dependencies:
-      '@stoati/react-tools': 0.0.42(postcss@8.4.38)
+      '@stoati/react-tools': 0.0.47(postcss@8.4.38)
       react: 18.2.0
       react-markdown: 9.0.1(@types/react@18.2.78)(react@18.2.0)
       tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
@@ -604,15 +607,16 @@ packages:
       - ts-node
     dev: false
 
-  /@stoati/react-tools@0.0.42(postcss@8.4.38):
-    resolution: {integrity: sha512-otb6vjsYSfdH28EVw/dhC2m3jG8ef0PxKhyf3A+hZ5pDiSUqWzEZoI0JkoE0FBwVWEx/lZv2A17tPKfE5YU45A==}
+  /@stoati/react-tools@0.0.47(postcss@8.4.38):
+    resolution: {integrity: sha512-gsDVSPQTv6p2QCLXnseMILZGBrhgUde/DqtZ877zCL2Eq8hP6jYPltMa9qiR8/UjVlNqgryNi0rgbOniCGxoIQ==}
     dependencies:
-      '@stoati/shared-types': 0.0.17(postcss@8.4.38)
+      '@stoati/shared-types': 0.0.18(postcss@8.4.38)
       '@tanstack/query-core': 5.32.0
       '@tanstack/react-query': 5.32.0(react@18.2.0)
       '@types/react': 18.2.78
       jotai: 2.8.0(@types/react@18.2.78)(react@18.2.0)
       jotai-tanstack-query: 0.8.5(@tanstack/query-core@5.32.0)(jotai@2.8.0)(wonka@6.3.4)
+      lucide-react: 0.357.0(react@18.2.0)
       react: 18.2.0
       react-markdown: 9.0.1(@types/react@18.2.78)(react@18.2.0)
       tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
@@ -641,8 +645,8 @@ packages:
       - ts-node
     dev: false
 
-  /@stoati/shared-types@0.0.17(postcss@8.4.38):
-    resolution: {integrity: sha512-Ttx8Vo5u4dxt7+gWJFbtTDL6e8//wAALjCiJR7hLSEeG0MajaTumsBazj3zR4w7xgZkSPfacINuBlXTWXvgoPg==}
+  /@stoati/shared-types@0.0.18(postcss@8.4.38):
+    resolution: {integrity: sha512-EiRGp8FW3agEIaBLR0dbJarP0HKuZTe3KNXbH2YiMGv9ynJFv85yBKTjcSTCBqYsOwqOvuF2Y9Gx0hk9x7KX/Q==}
     dependencies:
       tsup: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
       typescript: 5.4.5
@@ -1013,6 +1017,10 @@ packages:
     resolution: {integrity: sha512-bogsDO8xosuh/l3PxIvA5AMl3+BnRVAse9sDW/60amzj4MbGS5re4WH5eVEXiuH8G1/3G7QUAX2QNr3Yx8z5rA==}
     dev: false
 
+  /embla-carousel@8.0.4:
+    resolution: {integrity: sha512-INndmilrV9KY4Wnb4F2tI55DuQnFjf3GPOaPDT2LGYiKhIWVNUhv1nz/RI7CZ6WoIZ8MYHP4t6Qm/cqpcGHknA==}
+    dev: false
+
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
@@ -1360,6 +1368,14 @@ packages:
   /lru-cache@10.2.0:
     resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
     engines: {node: 14 || >=16.14}
+
+  /lucide-react@0.357.0(react@18.2.0):
+    resolution: {integrity: sha512-ILK6Ye6BMFyXyIHqG8FwMit1XKrj4KocLLLW4fDAAwsFjt6gSL9U6e3sZlbARIOqv0oP5XzLVacHEcb2SxuWkw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /lucide-react@0.376.0(react@18.2.0):
     resolution: {integrity: sha512-g91IX3ERD6yUR1TL2dsL4BkcGygpZz/EsqjAeL/kcRQV0EApIOr/9eBfKhYOVyQIcGGuotFGjF3xKLHMEz+b7g==}
