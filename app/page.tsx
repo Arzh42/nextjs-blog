@@ -1,38 +1,43 @@
-import Gallery from "@/app/Gallery";
-import Links from "@/app/Links";
-import { StyledText, Template, TextField } from "@stoati/nextjs-tools";
-import { ChevronDown } from "lucide-react";
+import getData from "@/lib/stoati/getData";
+import { getElement } from "@/lib/stoati/getElement";
+import {
+  getElementSimpleTextData,
+  getElementStyledTextData,
+} from "@/lib/stoati/getElementTypedData";
+import StyledText from "@/lib/stoati/StyledText";
 
-export default function Home() {
+export default async function Home() {
+  const data = await getData();
+
+  const title = getElement(data, "titleDescription/title#dosk89");
+
+  const titleData = getElementSimpleTextData(title);
+
+  const splittedTitle = titleData["fr-FR"].split(" ");
+
   return (
-    <>
-      <div className=" flex flex-col items-stretch min-h-screen snap-y scroll-smooth snap-mandatory overflow-auto h-screen backdrop-brightness-50 backdrop-blur-xl">
-        <div className="flex flex-col items-center min-h-screen py-8 snap-start ">
-          <header className="flex flex-col items-center gap-2 ">
-            <h1 className="font-bold text-5xl text-white">
-              <TextField templateElementId="7585caa0-7f66-4c29-bf90-4c79ab2e9768" />
-            </h1>
-            <h2 className="font-bold text-xl text-white">
-              <TextField templateElementId="9d747f3c-0a2e-4d72-9acc-2faf555f5023" />
-            </h2>
-          </header>
-          <div className="flex flex-col justify-center items-center flex-1 text-white font-bold text-xl text-center px-2">
-            <StyledText templateElementId="0ed78345-e2eb-4172-a831-3e6a00dcec6b" />
+    <div className="flex flex-col md:justify-center items-center h-screen">
+      <div className="flex flex-col md:flex-row gap-12 max-w-screen-md">
+        <div className="relative h-[445px]">
+          <div className="w-[400px] h-[400px] overflow-hidden max-w-[100vw]">
+            <img
+              src="https://images.unsplash.com/photo-1614204424926-196a80bf0be8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=filipp-romanovski-CGKYNN3uuVo-unsplash.jpg&w=1920"
+              width={400}
+              height={400}
+            />
           </div>
-          <div className="text-white flex gap-2">
-            <ChevronDown />
-            Descendez pour découvrir l'artiste
-            <ChevronDown />
-          </div>
+          <h2 className="absolute bottom-0 left-4 text-5xl font-bold flex flex-col">
+            <span>{splittedTitle[0]}</span>
+            <span>{splittedTitle[1]}</span>
+          </h2>
         </div>
-
-        <Template templateElementId="8e3f92e6-06a9-4173-bf16-5209e9227d4d">
-          {(props) => {
-            return <Gallery {...props} key={props.parentId} />;
-          }}
-        </Template>
-        <Links />
+        <div className="p-4 flex items-center justify-center text-center">
+          <StyledText
+            path={"titleDescription/description#49oisa"}
+            data={data}
+          />
+        </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@stoati/nextjs-tools": "^0.0.58",
     "@stoati/react-tools": "^0.0.47",
@@ -22,7 +23,8 @@
     "react-dom": "18.2.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "zod": "^3.23.8"
   },
   "engines": {
     "node": ">=18"
