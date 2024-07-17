@@ -20,7 +20,10 @@ export const getElement = (
 
     if (!element) {
       throw new Error(
-        "Element not found please check the path for " + JSON.stringify(data)
+        "Element not found please check the path " +
+          elementPath +
+          " for " +
+          JSON.stringify(data)
       );
     }
 
